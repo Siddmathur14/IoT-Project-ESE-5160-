@@ -1,0 +1,191 @@
+T58B0 41580:039.327   SEGGER J-Link V7.52a Log File
+T58B0 41580:039.522   DLL Compiled: Jul 28 2021 11:08:12
+T58B0 41580:039.574   Logging started @ 2023-05-05 05:37
+T58B0 41580:039.619 - 324863.026ms
+T58B0 41580:045.762 JLINK_ExecCommand("Device = ATSAMD21G18A", ...). 
+T58B0 41580:046.222   Device "ATSAMD21G18" selected.
+T58B0 41580:047.165 - 1.373ms returns 0x00
+T58B0 41580:089.895 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T58B0 41580:091.530 - 1.749ms returns 0x00
+T58B0 41580:091.679 JLINK_SetSpeed(4000)
+T58B0 41580:092.159 - 0.581ms
+T58B0 41580:092.295 JLINK_ResetPullsRESET(OFF)
+T58B0 41580:092.337 - 0.062ms
+T58B0 41580:092.381 JLINK_Connect()
+T58B0 41580:092.964   InitTarget() start
+T58B0 41580:093.080    J-Link Script File: Executing InitTarget()
+T58B0 41580:093.563   InitTarget()
+T58B0 41580:097.756   InitTarget() end
+T58B0 41580:099.177   Found SW-DP with ID 0x0BC11477
+T58B0 41580:102.460   DPIDR: 0x0BC11477
+T58B0 41580:102.521   Scanning AP map to find all available APs
+T58B0 41580:103.664   AP[1]: Stopped AP scan as end of AP map has been reached
+T58B0 41580:103.720   AP[0]: AHB-AP (IDR: 0x04770031)
+T58B0 41580:103.756   Iterating through AP map to find AHB-AP to use
+T58B0 41580:105.141   AP[0]: Core found
+T58B0 41580:105.197   AP[0]: AHB-AP ROM base: 0x41003000
+T58B0 41580:105.985   CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+T58B0 41580:106.053   Found Cortex-M0 r0p1, Little endian.
+T58B0 41580:207.636   -- Max. mem block: 0x000013E0
+T58B0 41580:208.093   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T58B0 41580:208.697   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T58B0 41580:209.413   CPU_ReadMem(4 bytes @ 0xE0002000)
+T58B0 41580:210.218   FPUnit: 4 code (BP) slots and 0 literal slots
+T58B0 41580:210.261   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T58B0 41580:210.729   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T58B0 41580:211.259   CPU_ReadMem(4 bytes @ 0xE0001000)
+T58B0 41580:211.814   CPU_WriteMem(4 bytes @ 0xE0001000)
+T58B0 41580:212.530   CoreSight components:
+T58B0 41580:212.587   ROMTbl[0] @ 41003000
+T58B0 41580:212.616   CPU_ReadMem(64 bytes @ 0x41003000)
+T58B0 41580:213.563   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T58B0 41580:214.420   ROMTbl[0][0]: E00FF000, CID: B105100D, PID: 000BB4C0 ROM Table
+T58B0 41580:214.486   ROMTbl[1] @ E00FF000
+T58B0 41580:214.517   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T58B0 41580:215.579   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T58B0 41580:216.461   ROMTbl[1][0]: E000E000, CID: B105E00D, PID: 000BB008 SCS
+T58B0 41580:216.506   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T58B0 41580:217.343   ROMTbl[1][1]: E0001000, CID: B105E00D, PID: 000BB00A DWT
+T58B0 41580:217.394   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T58B0 41580:218.144   ROMTbl[1][2]: E0002000, CID: B105E00D, PID: 000BB00B FPB
+T58B0 41580:218.224   CPU_ReadMem(32 bytes @ 0x41006FE0)
+T58B0 41580:219.019   ROMTbl[0][1]: 41006000, CID: B105900D, PID: 001BB932 MTB-M0+
+T58B0 41580:219.065 - 126.697ms returns 0x00
+T58B0 41580:219.181 JLINK_ExecCommand("ExcludeFlashCacheRange 0x0 - 0x40000", ...). 
+T58B0 41580:219.215 - 0.010ms returns 0x00
+T58B0 41580:219.267 JLINK_Halt()
+T58B0 41580:222.514 - 3.283ms returns 0x00
+T58B0 41580:224.259 JLINK_JTAG_GetDeviceID(DeviceIndex = 0)
+T58B0 41580:224.290 - 0.040ms returns 0
+T58B0 41580:224.320 JLINK_ReadMemU32(0x41002018, 0x1 Items)
+T58B0 41580:224.366   CPU_ReadMem(4 bytes @ 0x41002018)
+T58B0 41580:225.008   Data:  05 03 01 10
+T58B0 41580:225.067 - 0.759ms returns 1 (0x1)
+T4224 41580:239.851 JLINK_IsHalted()
+T4224 41580:240.469 - 0.647ms returns TRUE
+T4224 41580:240.524 JLINK_GetMOEs(...)
+T4224 41580:240.561   CPU_ReadMem(4 bytes @ 0xE000ED30)
+T4224 41580:241.138 - 0.643ms returns 0x01
+T4224 41580:241.188 JLINK_ReadReg(R15 (PC))
+T4224 41580:241.210 - 0.029ms returns 0x000211AC
+T58B0 41580:271.473 JLINK_BeginDownload(Flags = 0x00000000)
+T58B0 41580:271.528 - 0.063ms
+T58B0 41580:271.566 JLINK_WriteMem(0x00000000, 0x7CB8 Bytes, ...)
+T58B0 41580:271.582   Data:  00 2D 00 20 A9 35 00 00 A5 35 00 00 A5 35 00 00 ...
+T58B0 41580:271.906   completely In flash
+T58B0 41580:271.973    -- Read from flash cache (31928 bytes @ 0x00000000)
+T58B0 41580:272.087 - 0.529ms returns 0x7CB8
+T58B0 41580:272.416 JLINK_WriteMem(0x00007CB8, 0xD0 Bytes, ...)
+T58B0 41580:272.443   Data:  40 1F 00 00 08 00 00 00 07 01 00 00 30 3A 45 53 ...
+T58B0 41580:272.471   completely In flash
+T58B0 41580:272.497    -- Read from flash cache (208 bytes @ 0x00007CB8)
+T58B0 41580:272.520 - 0.111ms returns 0xD0
+T4224 41580:448.027 JLINK_IsHalted()
+T4224 41580:448.128 - 0.111ms returns TRUE
+T58B0 41580:449.473 JLINK_EndDownload()
+T58B0 41580:449.898   CPU_ReadMem(4 bytes @ 0x41006004)
+T58B0 41580:450.520   CPU_ReadMem(4 bytes @ 0xE000ED90)
+T58B0 41580:451.049    -- --------------------------------------
+T58B0 41580:451.103   Flash bank @ 0x00000000: Default: L2 verify disabled because algorithm performs L1 verify
+T58B0 41580:451.126    -- Start of determining dirty areas in flash cache
+T58B0 41580:451.234    -- End of determining dirty areas
+T58B0 41580:451.257    -- Start of preparing flash programming
+T58B0 41580:451.279    -- Calculating RAM usage
+T58B0 41580:451.316    -- RAM usage = 3876 Bytes
+T58B0 41580:451.338    -- Preserving CPU registers
+T58B0 41580:451.385    -- Preparing memory
+T58B0 41580:451.469    -- Preparing target
+T58B0 41580:451.503    -- Preserving target RAM temporarily used for programming
+T58B0 41580:476.658    -- Downloading RAMCode
+T58B0 41580:495.094    -- Preparing RAMCode
+T58B0 41580:501.850    -- Checking target RAM
+T58B0 41580:503.676    -- End of preparing flash programming
+T58B0 41580:504.091   Looking for J-Link GUI Server exe at: C:\Program Files (x86)\Atmel\Studio\7.0\atbackend\JLinkGUIServer.exe
+T58B0 41580:504.331   Looking for J-Link GUI Server exe at: \JLinkGUIServer.exe
+T58B0 41580:804.762   Failed to connect to J-Link GUI Server.
+T58B0 41580:829.625    -- CPU speed could not be measured.
+T58B0 41580:829.687    -- Start of comparing flash
+T58B0 41580:829.710    -- CRC check was estimated as fastest method
+T58B0 41580:829.738    -- Comparing range 0x0000 - 0x7DFF (126 Sectors, 31 KiB), using multi-block CRC calculation
+T58B0 41580:855.055    -- All CRCs match
+T58B0 41580:855.144    -- Comparing range 0x0000 - 0x7DFF (126 Sectors, 31 KiB), using alternative multi-block CRC calculation
+T58B0 41580:880.602    -- All CRCs match
+T58B0 41580:880.688    -- End of comparing flash
+T58B0 41580:880.724    -- Start of erasing sectors
+T58B0 41580:880.751    -- End of erasing sectors
+T58B0 41580:880.777    -- Start of flash programming
+T58B0 41580:880.803    -- End of flash programming
+T58B0 41580:880.828    -- Start of restoring
+T58B0 41580:880.854    -- Restoring RAMCode
+T58B0 41580:885.325    -- Restoring target memory
+T58B0 41580:904.658    -- Restore target
+T58B0 41580:904.736    -- Restore memory
+T58B0 41580:904.758    -- Restoring CPU registers
+T58B0 41580:904.802    -- End of restoring
+T58B0 41580:904.913    -- Bank 0 @ 0x00000000: Skipped. Contents already match
+T58B0 41580:904.940    -- Bank 0 @ 0x00000000: Skipped. Contents already match
+T58B0 41580:912.967 - 463.542ms returns 0 (0x0)
+T58B0 41580:913.893 JLINK_ResetPullsRESET(ON)
+T58B0 41580:913.958 - 0.073ms
+T58B0 41580:913.978 JLINK_ResetNoHalt()
+T58B0 41580:914.375   InitTarget() start
+T58B0 41580:914.416    J-Link Script File: Executing InitTarget()
+T58B0 41580:914.466   InitTarget()
+T58B0 41580:918.521   InitTarget() end
+T58B0 41580:919.635   Found SW-DP with ID 0x0BC11477
+T58B0 41580:923.319   DPIDR: 0x0BC11477
+T58B0 41580:923.396   AP map detection skipped. Manually configured AP map found.
+T58B0 41580:923.433   AP[0]: AHB-AP (IDR: Not set)
+T58B0 41580:924.973   AP[0]: Core found
+T58B0 41580:925.031   AP[0]: AHB-AP ROM base: 0x41003000
+T58B0 41580:925.806   CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+T58B0 41580:925.873   Found Cortex-M0 r0p1, Little endian.
+T58B0 41581:027.299   -- Max. mem block: 0x000010C8
+T58B0 41581:027.412   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T58B0 41581:028.200   CPU_ReadMem(4 bytes @ 0xE0002000)
+T58B0 41581:028.939   FPUnit: 4 code (BP) slots and 0 literal slots
+T58B0 41581:029.066   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T58B0 41581:029.876   CPU_ReadMem(4 bytes @ 0xE0001000)
+T58B0 41581:030.658   CoreSight components:
+T58B0 41581:030.714   ROMTbl[0] @ 41003000
+T58B0 41581:030.744   CPU_ReadMem(64 bytes @ 0x41003000)
+T58B0 41581:031.657   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T58B0 41581:032.492   ROMTbl[0][0]: E00FF000, CID: B105100D, PID: 000BB4C0 ROM Table
+T58B0 41581:032.548   ROMTbl[1] @ E00FF000
+T58B0 41581:032.574   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T58B0 41581:033.664   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T58B0 41581:034.528   ROMTbl[1][0]: E000E000, CID: B105E00D, PID: 000BB008 SCS
+T58B0 41581:034.572   CPU_WriteMem(4 bytes @ 0xE0001000)
+T58B0 41581:035.207   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T58B0 41581:036.063   ROMTbl[1][1]: E0001000, CID: B105E00D, PID: 000BB00A DWT
+T58B0 41581:036.108   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T58B0 41581:036.841   ROMTbl[1][2]: E0002000, CID: B105E00D, PID: 000BB00B FPB
+T58B0 41581:036.884   CPU_ReadMem(32 bytes @ 0x41006FE0)
+T58B0 41581:037.653   ROMTbl[0][1]: 41006000, CID: B105900D, PID: 001BB932 MTB-M0+
+T58B0 41581:037.706   JLINK_Reset()
+T58B0 41581:037.744     CPU_ReadMem(4 bytes @ 0x20000000)
+T58B0 41581:038.294     CPU_WriteMem(4 bytes @ 0x20000000)
+T58B0 41581:038.952     ResetTarget() start
+T58B0 41581:039.022      J-Link Script File: Executing ResetTarget()
+T58B0 41581:039.734     CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T58B0 41581:040.416     CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T58B0 41581:041.111     CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T58B0 41581:042.948     CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T58B0 41581:043.550     CPU_ReadMem(4 bytes @ 0x41002100)
+T58B0 41581:044.159     CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T58B0 41581:045.047     ResetTarget() end
+T58B0 41581:048.962     CPU_WriteMem(4 bytes @ 0xE0002000)
+T58B0 41581:049.763     CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T58B0 41581:050.440     CPU_ReadMem(4 bytes @ 0xE0001000)
+T58B0 41581:051.076     CPU_WriteMem(4 bytes @ 0xE0001000)
+T58B0 41581:051.647   - 13.969ms
+T58B0 41581:051.692   JLINK_Go()
+T58B0 41581:051.735     CPU_ReadMem(4 bytes @ 0xE0001000)
+T58B0 41581:052.262     CPU_WriteMem(4 bytes @ 0xE0001000)
+T58B0 41581:052.878     CPU_WriteMem(4 bytes @ 0xE0001004)
+T58B0 41581:054.239   - 2.576ms
+T58B0 41581:054.280 - 140.310ms
+T58B0 41581:060.153 JLINK_Close()
+T58B0 41581:092.643 - 32.547ms
+T58B0 41581:092.712   
+T58B0 41581:092.727   Closed

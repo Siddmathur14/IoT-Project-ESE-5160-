@@ -1,0 +1,55 @@
+[
+    {
+        "id": "dc218bb31072df76",
+        "type": "ui_switch",
+        "z": "ee25e41904bfd70a",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "09e706ac868c59db",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": true,
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "2",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 390,
+        "y": 1080,
+        "wires": [
+            [
+                "46fe4051c7a1a662"
+            ]
+        ]
+    },
+    {
+        "id": "09e706ac868c59db",
+        "type": "ui_group",
+        "name": "Logo",
+        "tab": "c19ddfcf.06e82",
+        "order": 2,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c19ddfcf.06e82",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]

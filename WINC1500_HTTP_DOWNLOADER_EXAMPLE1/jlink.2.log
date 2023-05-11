@@ -1,0 +1,240 @@
+T6114 9874:883.074   SEGGER J-Link V7.52a Log File
+T6114 9874:883.255   DLL Compiled: Jul 28 2021 11:08:12
+T6114 9874:883.309   Logging started @ 2023-05-10 01:50
+T6114 9874:883.358 - 108758.736ms
+T6114 9874:889.339 JLINK_ExecCommand("Device = ATSAMD21G18A", ...). 
+T6114 9874:889.696   Device "ATSAMD21G18" selected.
+T6114 9874:890.380 - 1.003ms returns 0x00
+T6114 9874:921.828 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T6114 9874:923.195 - 1.413ms returns 0x00
+T6114 9874:923.262 JLINK_SetSpeed(4100)
+T6114 9874:923.578 - 0.352ms
+T6114 9874:923.632 JLINK_ResetPullsRESET(OFF)
+T6114 9874:923.662 - 0.045ms
+T6114 9874:923.694 JLINK_Connect()
+T6114 9874:923.988   InitTarget() start
+T6114 9874:924.048    J-Link Script File: Executing InitTarget()
+T6114 9874:924.264   InitTarget()
+T6114 9874:927.577   InitTarget() end
+T6114 9874:928.710   Found SW-DP with ID 0x0BC11477
+T6114 9874:931.708   DPIDR: 0x0BC11477
+T6114 9874:931.771   Scanning AP map to find all available APs
+T6114 9874:933.023   AP[1]: Stopped AP scan as end of AP map has been reached
+T6114 9874:933.071   AP[0]: AHB-AP (IDR: 0x04770031)
+T6114 9874:933.097   Iterating through AP map to find AHB-AP to use
+T6114 9874:934.217   AP[0]: Core found
+T6114 9874:934.264   AP[0]: AHB-AP ROM base: 0x41003000
+T6114 9874:934.878   CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+T6114 9874:934.922   Found Cortex-M0 r0p1, Little endian.
+T6114 9875:038.747   -- Max. mem block: 0x000013E0
+T6114 9875:040.740   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T6114 9875:042.676   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T6114 9875:043.338   CPU_ReadMem(4 bytes @ 0xE0002000)
+T6114 9875:043.954   FPUnit: 4 code (BP) slots and 0 literal slots
+T6114 9875:044.002   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T6114 9875:048.584   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T6114 9875:051.650   CPU_ReadMem(4 bytes @ 0xE0001000)
+T6114 9875:052.269   CPU_WriteMem(4 bytes @ 0xE0001000)
+T6114 9875:052.984   CoreSight components:
+T6114 9875:053.170   ROMTbl[0] @ 41003000
+T6114 9875:053.239   CPU_ReadMem(64 bytes @ 0x41003000)
+T6114 9875:054.262   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T6114 9875:055.422   ROMTbl[0][0]: E00FF000, CID: B105100D, PID: 000BB4C0 ROM Table
+T6114 9875:055.486   ROMTbl[1] @ E00FF000
+T6114 9875:055.530   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T6114 9875:056.572   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T6114 9875:057.412   ROMTbl[1][0]: E000E000, CID: B105E00D, PID: 000BB008 SCS
+T6114 9875:057.451   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T6114 9875:058.167   ROMTbl[1][1]: E0001000, CID: B105E00D, PID: 000BB00A DWT
+T6114 9875:058.197   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T6114 9875:061.143   ROMTbl[1][2]: E0002000, CID: B105E00D, PID: 000BB00B FPB
+T6114 9875:061.174   CPU_ReadMem(32 bytes @ 0x41006FE0)
+T6114 9875:062.256   ROMTbl[0][1]: 41006000, CID: B105900D, PID: 001BB932 MTB-M0+
+T6114 9875:062.286 - 138.598ms returns 0x00
+T6114 9875:062.370 JLINK_ExecCommand("ExcludeFlashCacheRange 0x0 - 0x40000", ...). 
+T6114 9875:062.387 - 0.007ms returns 0x00
+T6114 9875:062.415 JLINK_Halt()
+T6114 9875:065.896 - 3.504ms returns 0x00
+T6114 9875:067.229 JLINK_JTAG_GetDeviceID(DeviceIndex = 0)
+T6114 9875:067.255 - 0.031ms returns 0
+T6114 9875:067.270 JLINK_ReadMemU32(0x41002018, 0x1 Items)
+T6114 9875:067.294   CPU_ReadMem(4 bytes @ 0x41002018)
+T6114 9875:067.771   Data:  05 03 01 10
+T6114 9875:067.799 - 0.534ms returns 1 (0x1)
+T8650 9875:069.109 JLINK_IsHalted()
+T8650 9875:070.166 - 1.077ms returns TRUE
+T8650 9875:070.202 JLINK_GetMOEs(...)
+T8650 9875:070.222   CPU_ReadMem(4 bytes @ 0xE000ED30)
+T8650 9875:070.733 - 0.550ms returns 0x01
+T8650 9875:070.767 JLINK_ReadReg(R15 (PC))
+T8650 9875:070.787 - 0.026ms returns 0x00003652
+T92D8 9875:086.039 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T92D8 9875:087.599   [0]: USB, S/N: 801041340
+T92D8 9875:087.633 - 1.600ms returns 1
+T92D8 9875:087.729 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T92D8 9875:147.159 - 59.466ms returns 0
+T6114 9875:213.825 JLINK_BeginDownload(Flags = 0x00000000)
+T6114 9875:213.945 - 0.138ms
+T6114 9875:214.026 JLINK_WriteMem(0x00012000, 0x276FC Bytes, ...)
+T6114 9875:214.050   Data:  50 7B 00 20 C9 A8 02 00 C1 A9 02 00 C1 A9 02 00 ...
+T6114 9875:214.605   completely In flash
+T6114 9875:215.040    -- Read from flash cache (161532 bytes @ 0x00012000)
+T6114 9875:215.163 - 1.155ms returns 0x276FC
+T6114 9875:215.560 JLINK_WriteMem(0x000396FC, 0x2E8 Bytes, ...)
+T6114 9875:215.592   Data:  00 00 00 00 0C 00 00 00 00 00 00 00 00 00 00 00 ...
+T6114 9875:215.647   completely In flash
+T6114 9875:215.689    -- Read from flash cache (744 bytes @ 0x000396FC)
+T6114 9875:215.720 - 0.169ms returns 0x2E8
+T8650 9875:273.242 JLINK_IsHalted()
+T8650 9875:273.295 - 0.064ms returns TRUE
+T8650 9875:478.352 JLINK_IsHalted()
+T8650 9875:478.403 - 0.062ms returns TRUE
+T6114 9875:479.455 JLINK_EndDownload()
+T6114 9875:480.006   CPU_ReadMem(4 bytes @ 0x41006004)
+T6114 9875:480.527   CPU_ReadMem(4 bytes @ 0xE000ED90)
+T6114 9875:482.772    -- --------------------------------------
+T6114 9875:482.822   Flash bank @ 0x00000000: Default: L2 verify disabled because algorithm performs L1 verify
+T6114 9875:482.848    -- Start of determining dirty areas in flash cache
+T6114 9875:482.986    -- End of determining dirty areas
+T6114 9875:483.013    -- Start of preparing flash programming
+T6114 9875:483.038    -- Calculating RAM usage
+T6114 9875:483.073    -- RAM usage = 10020 Bytes
+T6114 9875:483.098    -- Preserving CPU registers
+T6114 9875:483.140    -- Preparing memory
+T6114 9875:483.167    -- Preparing target
+T6114 9875:483.192    -- Preserving target RAM temporarily used for programming
+T6114 9875:548.841    -- Downloading RAMCode
+T6114 9875:568.552    -- Preparing RAMCode
+T6114 9875:576.901    -- Checking target RAM
+T6114 9875:579.180    -- End of preparing flash programming
+T6114 9875:579.560   Looking for J-Link GUI Server exe at: C:\Program Files (x86)\Atmel\Studio\7.0\atbackend\JLinkGUIServer.exe
+T6114 9875:579.770   Looking for J-Link GUI Server exe at: \JLinkGUIServer.exe
+T6114 9875:888.049   Failed to connect to J-Link GUI Server.
+T6114 9875:909.416    -- CPU speed could not be measured.
+T6114 9875:909.514    -- Start of comparing flash
+T6114 9875:909.556    -- CRC check was estimated as fastest method
+T6114 9875:909.608    -- Comparing range 0x12000 - 0x31FFF (512 Sectors, 128 KiB), using multi-block CRC calculation
+T6114 9875:964.199    -- CRC does not match for sectors 0-1, 3, 6, 12, 18-19, 25-511
+T6114 9875:964.301    -- Comparing range 0x32000 - 0x399FF (122 Sectors, 30 KiB), using multi-block CRC calculation
+T6114 9875:979.529    -- CRC does not match for sectors 0-121
+T6114 9875:979.593    -- Comparing range 0x12200 - 0x122FF (1 Sector, 256 Bytes), using alternative multi-block CRC calculation
+T6114 9875:982.286    -- All CRCs match
+T6114 9875:982.344    -- Comparing range 0x12400 - 0x125FF (2 Sectors, 512 Bytes), using alternative multi-block CRC calculation
+T6114 9875:985.889    -- All CRCs match
+T6114 9875:985.942    -- Comparing range 0x12700 - 0x12BFF (5 Sectors, 1 KiB), using alternative multi-block CRC calculation
+T6114 9875:989.472    -- All CRCs match
+T6114 9875:989.524    -- Comparing range 0x12D00 - 0x131FF (5 Sectors, 1 KiB), using alternative multi-block CRC calculation
+T6114 9875:992.988    -- All CRCs match
+T6114 9875:993.046    -- Comparing range 0x13400 - 0x138FF (5 Sectors, 1 KiB), using alternative multi-block CRC calculation
+T6114 9875:995.917    -- All CRCs match
+T6114 9875:995.972    -- End of comparing flash
+T6114 9875:996.000    -- Start of erasing sectors
+T6114 9875:996.029    -- Erasing range 0x00012000 - 0x000121FF (  2 Sectors, 512 Bytes)
+T6114 9875:998.974    -- Erasing range 0x00012300 - 0x000123FF (  1 Sector, 256 Bytes)
+T6114 9876:001.486    -- Erasing range 0x00012600 - 0x000126FF (  1 Sector, 256 Bytes)
+T6114 9876:003.690    -- Erasing range 0x00012C00 - 0x00012CFF (  1 Sector, 256 Bytes)
+T6114 9876:006.118    -- Erasing range 0x00013200 - 0x000133FF (  2 Sectors, 512 Bytes)
+T6114 9876:008.955    -- Erasing range 0x00013900 - 0x0001B8FF (128 Sectors, 32 KB)
+T6114 9876:120.102    -- Erasing range 0x0001B900 - 0x000238FF (128 Sectors, 32 KB)
+T6114 9876:230.882    -- Erasing range 0x00023900 - 0x0002B8FF (128 Sectors, 32 KB)
+T6114 9876:341.782    -- Erasing range 0x0002B900 - 0x000338FF (128 Sectors, 32 KB)
+T6114 9876:452.904    -- Erasing range 0x00033900 - 0x000399FF ( 97 Sectors, 24 KB)
+T6114 9876:537.456    -- End of erasing sectors
+T6114 9876:537.492    -- Start of flash programming
+T6114 9876:537.503    -- Programming range 0x00012000 - 0x000121FF (  2 Sectors, 512 Bytes)
+T6114 9876:537.529    -- Programming range 0x00012300 - 0x000123FF (  1 Sector, 256 Bytes)
+T6114 9876:537.543    -- Programming range 0x00012600 - 0x000126FF (  1 Sector, 256 Bytes)
+T6114 9876:543.832    -- Programming range 0x00012C00 - 0x00012CFF (  1 Sector, 256 Bytes)
+T6114 9876:546.669    -- Programming range 0x00013200 - 0x000133FF (  2 Sectors, 512 Bytes)
+T6114 9876:549.541    -- Programming range 0x00013900 - 0x0001B8FF (128 Sectors, 32 KB)
+T6114 9876:703.451    -- Programming range 0x0001B900 - 0x000238FF (128 Sectors, 32 KB)
+T6114 9876:875.589    -- Programming range 0x00023900 - 0x0002B8FF (128 Sectors, 32 KB)
+T6114 9877:047.871    -- Programming range 0x0002B900 - 0x000338FF (128 Sectors, 32 KB)
+T6114 9877:220.960    -- Programming range 0x00033900 - 0x000399FF ( 97 Sectors, 24 KB)
+T6114 9877:372.464    -- End of flash programming
+T6114 9877:372.523    -- 0x12000 - 0x121FF (  2 Sectors, 512 Bytes)
+T6114 9877:372.542    -- 0x12300 - 0x123FF (  1 Sector, 256 Bytes)
+T6114 9877:372.561    -- 0x12600 - 0x126FF (  1 Sector, 256 Bytes)
+T6114 9877:372.580    -- 0x12C00 - 0x12CFF (  1 Sector, 256 Bytes)
+T6114 9877:372.598    -- 0x13200 - 0x133FF (  2 Sectors, 512 Bytes)
+T6114 9877:372.618    -- 0x13900 - 0x399FF (609 Sectors, 152 KoB)
+T6114 9877:372.638    -- Start of restoring
+T6114 9877:372.657    -- Restoring RAMCode
+T6114 9877:393.861    -- Restoring target memory
+T6114 9877:443.107    -- Restore target
+T6114 9877:443.166    -- Restore memory
+T6114 9877:443.185    -- Restoring CPU registers
+T6114 9877:443.222    -- End of restoring
+T6114 9877:443.315    -- Bank 0 @ 0x00000000: 6 ranges affected (157696 bytes)
+T6114 9877:443.353    -- Total: 1.960s (Prepare: 0.426s, Compare: 0.086s, Erase: 0.541s, Program & Verify: 0.852s, Restore: 0.053s)
+T6114 9877:443.381    -- Program & Verify speed: 181 KiB/s
+T6114 9877:447.451 - 1968.015ms returns 157696 (0x26800)
+T6114 9877:447.903 JLINK_ResetPullsRESET(ON)
+T6114 9877:447.923 - 0.023ms
+T6114 9877:447.933 JLINK_ResetNoHalt()
+T6114 9877:448.200   InitTarget() start
+T6114 9877:448.213    J-Link Script File: Executing InitTarget()
+T6114 9877:448.227   InitTarget()
+T6114 9877:451.326   InitTarget() end
+T6114 9877:452.045   Found SW-DP with ID 0x0BC11477
+T6114 9877:454.685   DPIDR: 0x0BC11477
+T6114 9877:454.706   AP map detection skipped. Manually configured AP map found.
+T6114 9877:454.720   AP[0]: AHB-AP (IDR: Not set)
+T6114 9877:455.775   AP[0]: Core found
+T6114 9877:455.791   AP[0]: AHB-AP ROM base: 0x41003000
+T6114 9877:456.314   CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+T6114 9877:456.330   Found Cortex-M0 r0p1, Little endian.
+T6114 9877:557.529   -- Max. mem block: 0x000010C8
+T6114 9877:557.596   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T6114 9877:558.401   CPU_ReadMem(4 bytes @ 0xE0002000)
+T6114 9877:559.275   FPUnit: 4 code (BP) slots and 0 literal slots
+T6114 9877:559.315   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T6114 9877:560.108   CPU_ReadMem(4 bytes @ 0xE0001000)
+T6114 9877:560.848   CoreSight components:
+T6114 9877:560.894   ROMTbl[0] @ 41003000
+T6114 9877:560.915   CPU_ReadMem(64 bytes @ 0x41003000)
+T6114 9877:561.911   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T6114 9877:562.757   ROMTbl[0][0]: E00FF000, CID: B105100D, PID: 000BB4C0 ROM Table
+T6114 9877:562.808   ROMTbl[1] @ E00FF000
+T6114 9877:562.830   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T6114 9877:563.815   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T6114 9877:564.718   ROMTbl[1][0]: E000E000, CID: B105E00D, PID: 000BB008 SCS
+T6114 9877:564.845   CPU_WriteMem(4 bytes @ 0xE0001000)
+T6114 9877:565.482   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T6114 9877:566.409   ROMTbl[1][1]: E0001000, CID: B105E00D, PID: 000BB00A DWT
+T6114 9877:566.458   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T6114 9877:567.338   ROMTbl[1][2]: E0002000, CID: B105E00D, PID: 000BB00B FPB
+T6114 9877:567.390   CPU_ReadMem(32 bytes @ 0x41006FE0)
+T6114 9877:568.283   ROMTbl[0][1]: 41006000, CID: B105900D, PID: 001BB932 MTB-M0+
+T6114 9877:568.346   JLINK_Reset()
+T6114 9877:568.369     CPU_ReadMem(4 bytes @ 0x20000000)
+T6114 9877:568.985     CPU_WriteMem(4 bytes @ 0x20000000)
+T6114 9877:569.580     ResetTarget() start
+T6114 9877:569.628      J-Link Script File: Executing ResetTarget()
+T6114 9877:570.101     CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T6114 9877:570.578     CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T6114 9877:571.040     CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T6114 9877:572.855     CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T6114 9877:573.332     CPU_ReadMem(4 bytes @ 0x41002100)
+T6114 9877:573.822     CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T6114 9877:574.459     ResetTarget() end
+T6114 9877:578.331     CPU_WriteMem(4 bytes @ 0xE0002000)
+T6114 9877:579.026     CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T6114 9877:579.671     CPU_ReadMem(4 bytes @ 0xE0001000)
+T6114 9877:580.300     CPU_WriteMem(4 bytes @ 0xE0001000)
+T6114 9877:580.962   - 12.651ms
+T6114 9877:581.012   JLINK_Go()
+T6114 9877:581.039     CPU_ReadMem(4 bytes @ 0xE0001000)
+T6114 9877:581.685     CPU_WriteMem(4 bytes @ 0xE0001000)
+T6114 9877:582.346     CPU_WriteMem(4 bytes @ 0xE0001004)
+T6114 9877:583.743   - 2.766ms
+T6114 9877:583.788 - 135.861ms
+T92D8 9877:583.833 JLINK_EMU_GetList(InterfaceMask = 0x00000001, MaxInfos = 0x00000032) 
+T92D8 9877:585.425   [0]: USB, S/N: 801041340
+T92D8 9877:585.462 - 1.636ms returns 1
+T92D8 9877:585.573 JLINK_EMU_GetList(InterfaceMask = 0x00000002, MaxInfos = 0x00000032) 
+T92D8 9877:632.581 - 47.030ms returns 0
+T6114 9877:634.712 JLINK_Close()
+T6114 9877:652.481 - 17.796ms
+T6114 9877:652.566   
+T6114 9877:652.588   Closed
